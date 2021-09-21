@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 
 const AddNewTask = () => {
 
+    const history = useHistory();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        const singleTask = { action, finish };
+        const deadline = finish.split('-').reverse().join('/');
+        const singleTask = { action, deadline };
         fetch('http://localhost:8000/ToDos', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
@@ -12,6 +16,7 @@ const AddNewTask = () => {
         })
         .then(() => {
             console.log("Task added", singleTask)
+            history.push('/')
         })
     }
 
@@ -28,7 +33,7 @@ const AddNewTask = () => {
                 </div>
                 <div className="finish-task">
                     <h3>Finish until:</h3>
-                    <input type="text" onChange={(e) => setFinish(e.target.value)}/>    
+                    <input type="date" onChange={(e) => setFinish(e.target.value)}/>    
                 </div>
                 <button onClick={ handleSubmit } className='button-submit'>Do it!</button>
             </div>

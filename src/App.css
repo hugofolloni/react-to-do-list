@@ -4,3 +4,12 @@
   box-sizing: border-box;
 }
 
+.home {
+  margin-left: 25vw;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+
