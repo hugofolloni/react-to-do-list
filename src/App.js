@@ -6,6 +6,7 @@ import Home from './Home';
 import NewTaskHeader from './NewTaskHeader'
 import Pomodoro from './Pomodoro';
 import PomodoroHeader from './PomodoroHeader'
+import TaskDetails from './TaskDetails';
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
         <Route path='/Pomodoro'>
           <PomodoroHeader />
           <Pomodoro />
+        </Route>
+        <Route path='/toDos/:id'>
+          <PomodoroHeader />
+          <TaskDetails />
         </Route>
       </Switch>
     </div>

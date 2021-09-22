@@ -1,5 +1,5 @@
 import "./List.css"
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 const List = (props) => {
     
@@ -10,8 +10,9 @@ const List = (props) => {
         <div className="texts">
             {toDos.map((toDos) => (
                 <div className="singular-text">
+                    <Link to={ `/toDos/${ toDos.id }` } toDos = { toDos }>
                     <div className="main">
-                        <div className="mainAction">
+                        <div className="mainAction" >
                             <p>{ toDos.action} </p>
                             <div className="buttons">
                                 <button className="button">Complete</button>
@@ -22,6 +23,7 @@ const List = (props) => {
                             <p>{ toDos.deadline } </p>
                         </div>
                     </div>
+                    </Link>
                 </div>
             ))}
         </div>

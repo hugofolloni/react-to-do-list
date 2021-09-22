@@ -1,34 +1,10 @@
-import { useEffect, useState } from "react";
 import "./Tasks.css"
 import List from "./List"
+import useFetch from "./useFetch";
 
 const Home = () => {
 
-    const [isLoading, setLoading] = useState(true);
-
-    const [error, setError] = useState(null);
-
-    const[toDos, setToDos] = useState(null);
-
-    useEffect(() => {
-        fetch('http://localhost:8000/toDos')
-        .then(res => {
-            if(!res.ok){
-                throw Error("Could not fetch!");
-            }
-            return res.json();
-        })
-        .then(data => {
-            console.log(data)
-            setToDos(data)
-            setLoading(false)
-            setError(null)
-        })
-        .catch(err => {
-            setLoading(false);
-            setError(err.message);
-        })
-    }, []);
+    const {data: isLoading, error, toDos} = useFetch('http://localhost:8000/toDos')
 
     return ( 
         <div className="home">

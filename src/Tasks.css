@@ -23,27 +23,27 @@ body{
 }
 
 
-.toDoInput input {
+.input-task {
     border-radius: 10px;
     width: 100%;
-    height: 30px;
     background-color: #696666;
     color:#eaeaea;
     padding: 10px;
     border: none;
+    margin-bottom: 30px;
     font-weight: 700;
     outline: none;
     transition: 0.3s ease-out all;
 }
 
-.toDoInput input:focus{
+.input-task:focus{
     border: 2px solid #713ed8;
 }
 
 .button-submit {
     background-color: #713ed8;
     width: 50%;
-    height: 40px;
+    height: 50px;
     border: none;
     border-radius: 10px;
     color: #eaeaea;
