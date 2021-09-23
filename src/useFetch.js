@@ -15,7 +15,6 @@ const useFetch = (url) => {
             return res.json();
         })
         .then(data => {
-            console.log(data)
             setToDos(data)
             setLoading(false)
             setError(null)

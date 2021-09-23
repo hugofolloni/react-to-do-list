@@ -20,7 +20,6 @@ const TaskDetails = () => {
                     <div className="buttons-taskpage">
                         <button className="button-taskpage">Complete</button>
                         <button className='button-taskpage' onClick={ () => { fetch('http://localhost:8000/toDos/' + toDos.id, {method: "DELETE"}).then(() => {history.push("/")})}}>Delete</button>                         
-                        <Link className='button-taskpage' to='/Pomodoro'>Pomodoro</Link>
                     </div>
                    
                </div>

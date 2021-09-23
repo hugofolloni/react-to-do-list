@@ -20,7 +20,7 @@ const List = (props) => {
                             </div>
                         </div>
                         <div className="deadline">
-                            <p>{ toDos.deadline } </p>
+                            <p>Deadline: { toDos.deadline } </p>
                         </div>
                     </div>
                     </Link>
