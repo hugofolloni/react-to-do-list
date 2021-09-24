@@ -1,5 +1,5 @@
 .pomodoro-inside-div {
-    width: 60vw;
+    max-width: 60vw;
     background-color: rgb(83, 80, 80);
     margin-left: 20vw;
     margin-top: 10vh;
@@ -28,33 +28,6 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(14, 13, 13, 0.459);
-}
-
-.ordinaryButtonDiv {
-    display: flex;
-    justify-content: space-around;
-    width: 28%;
-    margin-left: 36%;
-}
-
-.ordinaryButtonDiv button {
-    background-color: #713ed8;
-    border-radius: 10px;
-    padding: 15px;
-    text-decoration: none;
-    color: #eaeaea;
-    font-weight: 700;
-    border: none;
-    width: 80px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    transition: 0.3s ease all;
-    cursor: pointer;
-}
-
-.ordinaryButtonDiv button:hover {
-    background-color: #4e1bb4;
 }
 
 .inside-div {
@@ -141,3 +114,5 @@ input[type=number]::-webkit-outer-spin-button {
 .inside-div button:hover {   
      background-color: #4e1bb4;
 }
+
+/* Por algum motivo, a página fica maior que 100vw e fica com a barra embaixo, não sei oq fazer para mudar isto! */

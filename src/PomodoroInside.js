@@ -10,7 +10,7 @@ const PomodoroInside = () => {
         const [persMin, setPersMin] = useState(25);
         const persSec = 0
 
-        const [taskDescription, setTaskDescription] = useState('')
+        const [description, setTaskDescription] = useState('')
 
         
         const id  = window.location.href.split('/').reverse()[0]
@@ -23,7 +23,10 @@ const PomodoroInside = () => {
 
         const saveTask = () => {
             const action = toDos.action;
-            const singlePomodoro = { taskDescription, action };
+            const currentDate = new Date()
+            console.log(currentDate.getDate())
+            const dia = currentDate.getDate() + '/' + (currentDate.getMonth() + 1)
+            const singlePomodoro = { description, action, dia };
             fetch('http://localhost:8000/pomodoros', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
@@ -72,11 +75,11 @@ const PomodoroInside = () => {
                     <div className="inside-inputs">
                         <div className="define-time">
                            <label>Duração</label>
-                           <input className='inputs' type="number" min='0' onChange={(e) => setPersMin(e.target.value)} value={persMin}/>     
+                           <input className='inputs' onChange={(e) => setPersMin(e.target.value)} value={persMin}/>     
                         </div>
                         <div className="pomodoro-description">
                             <label>Task Description</label>
-                            <input className='inputs' rows="10"  onChange={(e) => setTaskDescription(e.target.value)}></input>
+                            <input className='inputs' onChange={(e) => setTaskDescription(e.target.value)}></input>
                         </div>
                     </div>
                     <button onClick={ multipleFunctions }>Iniciar</button>

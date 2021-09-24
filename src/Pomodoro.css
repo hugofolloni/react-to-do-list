@@ -112,3 +112,26 @@ input[type=number]::-webkit-outer-spin-button {
 .personalizado button:hover{   
      background-color: #4e1bb4;
 }
+
+.goToLastPomodoro{
+    margin-left: -60vw;
+    margin-top: -10vh;
+}
+
+.goToLastPomodoro a {
+    background-color: #713ed8;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.goToLastPomodoro a:hover{
+    background-color: #4e1bb4;
+}

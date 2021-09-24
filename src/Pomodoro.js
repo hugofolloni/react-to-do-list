@@ -46,6 +46,9 @@ const Pomodoro = () => {
     
     return (
         <div className='pomodoro-div'>
+            <div className="goToLastPomodoro">
+                <a href='/LastPomodoros'>Last Pomodoros</a>
+            </div>
             <div className="clocks-label">
                 <p>{`${mins.toString().padStart(2, '0')}`}</p>
                 <p>{`${secs.toString().padStart(2, '0')}`}</p> 

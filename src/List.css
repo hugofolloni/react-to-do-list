@@ -4,11 +4,10 @@
     display: flex;
     flex-direction: row;
     background-color: rgb(83, 80, 80);
-    height: 12vh;
     border-radius: 15px;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 10px;
-    cursor: pointer;
+    cursor: auto;
 }
 
 .singular-text a {
@@ -19,6 +18,7 @@
 .main{
     display: flex;
     flex-direction: column;
+
 }
 .mainAction{
     font-size: 25px;
@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-between;
     width: 45vw;
+    margin-bottom: 10px;
 }
 
 .deadline{
@@ -37,7 +38,7 @@
 
 .button{
     display: flex;
-    justify-content:end;
+    justify-content: flex-end;
     background-color: #713ed8;
     border-radius: 10px;
     border: none;

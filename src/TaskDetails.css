@@ -39,7 +39,7 @@
 
 .button-taskpage{
     display: flex;
-    justify-content:end;
+    justify-content: flex-end;
     background-color: #713ed8;
     border-radius: 10px;
     border: none;

@@ -9,6 +9,17 @@
     }
   ],
   "pomodoros": [
-    
+    {
+      "description": "Bater de cabeça na parede",
+      "action": "Adicionar complete",
+      "dia": "24/9",
+      "id": 1
+    },
+    {
+      "description": "Agora eu vou conseguir botar as tarefas realizadas lá no coisinha, pra funfa ra coisa e o treco ficar mec!",
+      "action": "Adicionar complete",
+      "dia": "24/9",
+      "id": 2
+    }
   ]
 }
