@@ -1,25 +1,32 @@
 {
   "toDos": [
     {
-      "action": "Adicionar complete",
-      "description": "Devo adicionar uma forma de mostrar a tarefa como concluída. Pretendo fazer isso da seguinte forma: \n-dividirei a array toDos em duas, sendo que em uma delas terei as tarefas completas. Quando eu clicar em completar, vou excluir a tarefa da array de toDo e darei POST na array de completed!",
-      "deadline": "23/09/2021",
+      "action": "Casa do Braga",
+      "description": "Devemos construir a casa do Braga no Minecraft, afinal, ele ainda mora no projeto TAMAR",
+      "deadline": "25/09/2021",
       "isCompleted": "To do!",
       "id": 1
     }
   ],
   "pomodoros": [
     {
-      "description": "Bater de cabeça na parede",
-      "action": "Adicionar complete",
-      "dia": "24/9",
+      "description": "Pegar as madeiras",
+      "action": "Casa do Braga",
+      "dia": "25/9",
       "id": 1
-    },
+    }
+  ],
+  "completedTasks": [
     {
-      "description": "Agora eu vou conseguir botar as tarefas realizadas lá no coisinha, pra funfa ra coisa e o treco ficar mec!",
-      "action": "Adicionar complete",
-      "dia": "24/9",
-      "id": 2
+      "toDos": {
+        "action": "Entregar esse projeto",
+        "description": "Após 5 dias fazendo este projeto, ele está pronto e devo postar no github.",
+        "deadline": "24/09/2021",
+        "isCompleted": "To do!",
+        "id": 2
+      },
+      "dia": "25/09/2021",
+      "id": 1
     }
   ]
 }

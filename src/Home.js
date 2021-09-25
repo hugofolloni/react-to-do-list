@@ -9,7 +9,10 @@ const Home = () => {
     return ( 
         <div className="home">
             <div className="currentTasks">
-                <h1>Tasks Atuais</h1>
+                <div className="tasksDiv">
+                    <h1>Tasks Atuais</h1>
+                    <a className="whiteButton" href="/CompletedTasks">Tasks Completas</a>
+                </div>
                 { error && <div> {error} </div> }
                 { isLoading && <div> Loading... </div>}
                 { toDos && <List toDos = { toDos }/>}

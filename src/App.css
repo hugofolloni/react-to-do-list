@@ -16,4 +16,10 @@ html {
   margin-top: 10vh;
 }
 
-
+.tasksDiv{
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-between;
+}

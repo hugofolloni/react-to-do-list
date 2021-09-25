@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react"
 
-const LastPomodoros = () => {
+const CompletedTasks = () => {
 
     const [isLoading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [pomodoros, setPomodoros] = useState(null);
+    const [completedTasks, setCompletesTasks] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:8000/pomodoros')
+        fetch('http://localhost:8000/completedTasks')
         .then(res => {
             if(!res.ok){
                 throw Error("Could not fetch!");
@@ -15,7 +15,7 @@ const LastPomodoros = () => {
             return res.json();
         })
         .then(data => {
-            setPomodoros(data)
+            setCompletesTasks(data)
             setLoading(false)
             setError(null)
         })
@@ -24,31 +24,31 @@ const LastPomodoros = () => {
             setError(err.message);
         })
     }, []);
-    
+
     return ( 
         <div className="home">
-            <h1>Pomodoros Anteriores</h1>
+            <h1>Tasks Completas</h1>
             { error && <div> {error} </div> }
             { isLoading && <div> Loading... </div>}
-            { pomodoros &&
+            { completedTasks &&
                 <div className="texts">
-                    {pomodoros.map((pomodoros) => (
+                    {completedTasks.map((completedTasks) => (
                         <div className="singular-text">
                             <div className="main">
                                 <div className="mainAction" >
-                                    <p>{ pomodoros.description } </p>
+                                    <p>{ completedTasks.toDos.action } </p>
                                 </div>
                                 <div className="deadline">
-                                    <p>Task: {pomodoros.action }</p>
-                                    <p>Data: { pomodoros.dia } </p>
+                                    <p>Deadline: {completedTasks.toDos.deadline }</p>
+                                    <p>Entrega: { completedTasks.dia } </p>
                                 </div>
                             </div>
                         </div>
                     ))} 
                 </div>
-            }
+        }
         </div>
-     );
+    );
 }
  
-export default LastPomodoros;
+export default CompletedTasks;

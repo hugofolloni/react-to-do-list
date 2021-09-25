@@ -9,6 +9,7 @@ import PomodoroHeader from './PomodoroHeader'
 import TaskDetails from './TaskDetails';
 import PomodoroInside from './PomodoroInside';
 import LastPomodoros from './LastPomodoros';
+import CompletedTasks from './CompletedTasks';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
         <Route path='/LastPomodoros'>
           <PomodoroHeader />
           <LastPomodoros />
+        </Route>
+        <Route path='/CompletedTasks'>
+          <PomodoroHeader />
+          <CompletedTasks />
         </Route>
         <Route path='/toDos/:id'>
           <PomodoroHeader />
