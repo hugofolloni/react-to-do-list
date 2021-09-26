@@ -41,7 +41,7 @@
 }
 
 .purpleButton{
-  background-color: #713ed8;
+  background-color: #4e1bb4;
   border-radius: 10px;
   padding: 15px;
   text-decoration: none;
@@ -50,10 +50,8 @@
   display: flex;
   align-items: center;
   transition: 0.3s ease all;
-}
-
-.purpleButton{
-  background-color: #4e1bb4;
+  border: none;
+  height: 100%;
 }
 
 
@@ -77,5 +75,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width:  20vw;
+  width: 25vw;
 }

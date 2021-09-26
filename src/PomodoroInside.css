@@ -1,6 +1,5 @@
 .pomodoro-inside-div {
     max-width: 60vw;
-    background-color: rgb(83, 80, 80);
     margin-left: 20vw;
     margin-top: 10vh;
     padding: 5%;
@@ -27,7 +26,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(14, 13, 13, 0.459);
 }
 
 .inside-div {
@@ -65,11 +63,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .inside-inputs .inputs {
-    background-color: rgba(14, 13, 13, 0.459);
     border: none;
     border-radius: 10px;
     justify-content: center;
-    color: #eaeaea;
     text-align: center;
     font-size: 16px;
     margin-bottom: 30px;

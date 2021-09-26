@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css"
+import SetTheme from "./SetTheme";
 
 const Header = () => {
 
@@ -17,6 +18,7 @@ const Header = () => {
             <div className="buttonsOnHeader">
                 <a className='purpleButton'href="/newTask">New Task</a>
                 <a className='purpleButton' href="/Pomodoro">Pomodoro</a>
+                <SetTheme />
             </div>
         </div>
      );

@@ -1,7 +1,6 @@
-import { useParams, Link, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import './TaskDetails.css';
 import useFetch from "./useFetch";
-<Link to='/pomodoro'>Iniciar Pomodoro</Link>
 const TaskDetails = () => {
 
     const { id } = useParams();

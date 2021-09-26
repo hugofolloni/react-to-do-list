@@ -23,3 +23,8 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+
+.purpleButton{
+  font-weight: 700;
+  color: red;
+}
