@@ -6,6 +6,20 @@
       "deadline": "25/09/2021",
       "isCompleted": "To do!",
       "id": 1
+    },
+    {
+      "action": "Fazer a janta",
+      "description": "Hoje devemos preparar um arroz com nuggets.",
+      "deadline": "30/09/2021",
+      "isCompleted": "To do!",
+      "id": 2
+    },
+    {
+      "action": "Dar feliz aniversário pro Pedro",
+      "description": "Tá na hora, tá na horaaaaaaa!",
+      "deadline": "01/10/2021",
+      "isCompleted": "To do!",
+      "id": 3
     }
   ],
   "pomodoros": [
@@ -14,6 +28,12 @@
       "action": "Casa do Braga",
       "dia": "25/9",
       "id": 1
+    },
+    {
+      "description": "Nugget",
+      "action": "Fazer a janta",
+      "dia": "30/9",
+      "id": 2
     }
   ],
   "completedTasks": [
