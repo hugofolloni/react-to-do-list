@@ -1,7 +1,17 @@
 # react-to-do-list
 
-A simple to-do list made with React. That is my first real project using that library and I learned so much doing it. It is a to-do list with a pomodoro timer integrated, where the user can control his tasks and time for study/work. Since I don't have any design skills, the UI is really bad, but the tecnologies are kinda great haha. The user current and pasts tasks are storage on a json file, also with the last pomodoros linked with their respective task. The user have full access to json file data.
+## 🗒️ About this project
+A simple to-do list made with React. That is my first real project using that library and I learned so much doing it. It is a to-do list with a pomodoro timer integrated where the user can control his tasks and time for study/work. Since I don't have any design skills, the UI is really bad, but the tecnologies are kinda great haha. The user current and pasts tasks are storage on a json file, also with the last pomodoros linked with their respective task. The user have full access to json file data.
 
+## 🧔 User Story
+On the first page, it's displayed the current tasks that the user should do. Clicking on them, opens the details page, where the user can see the description and buttons to complete or delete the task. Also, there is a pomodoro timer inside the task, linking the study/work time with the respective action. Also, the homepage has a "past tasks" button, where the user can access all of his completed actions. In the pomodoro page, the user can create a pomodoro too, but not linking to anything. Also, it has a button, where the user can access all of his past timers to.
+
+## 💻 Technologies
+- React
+- JSON-server (to create the API)
+- React-Router
+
+## 🎨 UI
 Dark Mode Pages:
 ![image](https://user-images.githubusercontent.com/82226141/134794970-717ad4c1-f053-4c6b-9011-1dd5cb7eb76f.png)
 ![image](https://user-images.githubusercontent.com/82226141/134794976-9df0b9e8-103e-4d29-90b0-0cf773664b0e.png)
